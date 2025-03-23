@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Walut</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="display: block;">
+        <button class="tryb" onclick="toggleView()"> <b>Przełącz tryb</b></button>
+        <div class="header">
+            <h1>Kalkulator Walut</h1>
+        </div>
+        <div class="walutawybor">
+        <form>
+            <label class="waluta" for="Waluta">Wybierz walute:</label>
+            <select id="waluty" name="waluty">
+                <option value="PLN">PLN</option>
+                <option value="USD">USD</option>
+                <option value="CNY">CNY</option>
+                <option value="EUR">EUR</option>
+                <option value="KRW">KRW</option>
+                <option value="GBP">GBP</option>
+            </select>
+          </form>
+          <form>
+            <label class="waluta" for="Waluta">Wybierz walute:</label>
+            <select id="waluty1" name="waluty">
+              <option value="PLN">PLN</option>
+              <option value="USD">USD</option>
+              <option value="CNY">CNY</option>
+              <option value="EUR">EUR</option>
+              <option value="KRW">KRW</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </form>
+        </div>
+        <div class = "kalkulator">
+          <form>
+
+            <input style="background-color: #66FFB3; font-size: xx-large;" type="number" id="kwota" name="kwota" value="100"><br>
+          </form>
+            <span id="arrow" style="color: #ffffff; transform: rotate(180deg); font-size: 100px;">&#11013;</span>
+          <form>
+
+            <input style="background-color: #99FFFF; font-size: xx-large;" type="text" id="przeliczona" name="przeliczona" value="Przeliczona kwota" readonly><br>
+          </form>
+        </div>
+
+        <div class="buttons">
+            <button id="przelicz">Przelicz</button>
+            <button id="wyczysc">Wyczysć</button>
+        </div>
+    </div>
+    <div class="container2" style="display: none;">
+        <button class="tryb" onclick="toggleView()"> <b>Przełącz tryb</b></button>
+
+        <div class="walutawybor2">
+            <input style="background-color: #66FFB3; font-size: xx-large;" type="number" id="kwotax" name="kwota" value="100"><br>
+            <form>
+                <label class="waluta" for="Waluta">Wybierz walute:</label>
+                <select id="waluty3" name="waluty">
+                  <option value="PLN">PLN</option>
+                  <option value="USD">USD</option>
+                  <option value="CNY">CNY</option>
+                  <option value="EUR">EUR</option>
+                  <option value="KRW">KRW</option>
+                  <option value="GBP">GBP</option>
+                </select>
+              </form>
+        </div>
+        <div class="buttons2">
+            <button id="przelicz2">Przelicz</button>
+            <span style='font-size:100px; color: white;'>&#11015;</span>
+            <button id="wyczysc2" onclick="wyczysc()">Wyczysć</button>
+        </div>
+        <div class="jeden">
+            <input style="background-color: #99FFFF; font-size: xx-large;" type="text" id="przeliczona" name="przeliczona" value="Przeliczona kwota" readonly><br>
+            <input style="background-color: #99FFFF; font-size: xx-large;" type="text" id="przeliczona" name="przeliczona" value="Przeliczona kwota" readonly><br>
+        </div>
+        <div class="dwa">
+            <input style="background-color: #99FFFF; font-size: xx-large;" type="text" id="przeliczona" name="przeliczona" value="Przeliczona kwota" readonly><br>
+        </div>
+        <div class="jeden">
+            <input style="background-color: #99FFFF; font-size: xx-large;" type="text" id="przeliczona" name="przeliczona" value="Przeliczona kwota" readonly><br>
+            <input style="background-color: #99FFFF; font-size: xx-large;" type="text" id="przeliczona" name="przeliczona" value="Przeliczona kwota" readonly><br>
+        </div>
+
+    </div>
+</body>
+</html>

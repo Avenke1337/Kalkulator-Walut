@@ -1,0 +1,184 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #6666FF;
+    height: 100%;
+    
+    
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.tryb{
+    background-color: #FF9933;
+    width: 10%;
+    border-radius: 0px 25px 25px 0px; 
+    height: 75px;
+    font-size: x-large;
+    font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+    background-color: #FF99FF;
+    width: 33%;
+    height: 75px;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0 auto; 
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: normal;
+}
+
+
+
+.waluta{
+    background-color: #CC00CC;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+
+
+
+}
+
+.walutawybor{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    font-size: 30px;
+    
+}
+
+.kalkulator{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left : 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+
+#arrow {
+    font-size: 100px;
+}
+select {
+    height: 35px;
+    width: 270px;
+}
+
+input {
+    height: 35px;
+    width: 270px;
+}
+
+#przelicz {
+    background-color: #51df1a;
+    width: 30%;
+    height: 75px;
+    font-size: x-large;
+    font-family: "Titan One", sans-serif;
+}
+
+#wyczysc {
+    background-color: red;
+    width: 30%;
+    height: 75px;
+    font-size: x-large;
+    font-family: "Titan One", sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 400px;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+
+.container2 {
+    
+    background-color: #6666FF;
+    height: 100%;
+    
+}
+
+.walutawybor2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 780px;
+}
+
+.buttons2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    margin-left: 400px;
+    margin-top: 50px;
+
+}
+
+#przelicz2{
+    background-color: #51df1a;
+    width: 20%;
+    height: 75px;
+    font-size: x-large;
+    font-family: "Titan One", sans-serif;
+}
+
+#wyczysc2{
+    background-color: red;
+    width: 20%;
+    height: 75px;
+    font-size: x-large;
+    font-family: "Titan One", sans-serif;
+}
+
+.jeden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    margin-left: 550px;
+    margin-top: 50px;
+}
+
+.dwa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 780px;
+}
+
