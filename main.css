@@ -7,8 +7,6 @@
 .container{
     background-color: #6666FF;
     height: 100%;
-    
-    
 }
 
 body{
@@ -19,7 +17,7 @@ body{
 .tryb{
     background-color: #FF9933;
     width: 10%;
-    border-radius: 0px 25px 25px 0px; 
+    border-radius: 0px 25px 25px 0px;
     height: 75px;
     font-size: x-large;
     font-family: "Titan One", sans-serif;
@@ -33,7 +31,7 @@ body{
     height: 75px;
     font-size: xx-large;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
     font-family: "Titan One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -69,7 +67,6 @@ body{
     justify-content: space-around;
     margin-top: 70px;
     font-size: 30px;
-    
 }
 
 .kalkulator{
@@ -82,8 +79,6 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    
-
 }
 
 #arrow {
@@ -125,10 +120,8 @@ input {
 }
 
 .container2 {
-    
     background-color: #6666FF;
     height: 100%;
-    
 }
 
 .walutawybor2{

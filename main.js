@@ -1,9 +1,13 @@
+//Funkcje ktore odpowiadaja za czyszczenie okienek
+
 window.onload = function() {
     document.getElementById('wyczysc').onclick = function() {
         document.getElementById('kwota').value = '';
         document.getElementById('przeliczona').value = '';
     };
 };
+
+
 
 
 function wyczysc() {
@@ -17,7 +21,7 @@ function wyczysc() {
 
 
 
-
+//Kursy walut
 
 const kursy = {
     PLN: { USD: 0.25, EUR: 0.22, GBP: 0.19, CNY: 1.6, KRW: 300, PLN: 1 },
@@ -29,9 +33,9 @@ const kursy = {
 };
 
 
+//funkcje odpowiadajace za przeliczanie
 
-
-function przeliczanie(){
+function przeliczanieWalut(){
     let kwota = document.getElementById('kwota').value;
     let waluta1 = document.getElementById('waluty').value;
     let waluta2 = document.getElementById('waluty1').value;
@@ -40,10 +44,49 @@ function przeliczanie(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('przelicz').onclick = przeliczanie;
+    document.getElementById('przelicz').onclick = przeliczanieWalut;
 });
 
 
+function przeliczanieWalutMulti(){
+    let kwota = document.getElementById('kwotax').value;
+    let waluta = document.getElementById('waluty3').value;
+    let wynik1 = kwota * kursy[waluta]["PLN"] + " PLN";
+    let wynik2 = kwota * kursy[waluta]["USD"] + " USD";
+    let wynik3 = kwota * kursy[waluta]["EUR"] + " EUR";
+    let wynik4 = kwota * kursy[waluta]["GBP"] + " GBP";
+    let wynik5 = kwota * kursy[waluta]["CNY"] + " CNY";
+    let wynik6 = kwota * kursy[waluta]["KRW"] + " KRW";
+    document.getElementById('przeliczona1').value = wynik1
+    document.getElementById('przeliczona2').value = wynik2
+    document.getElementById('przeliczona3').value = wynik3
+    document.getElementById('przeliczona4').value = wynik4
+    document.getElementById('przeliczona5').value = wynik5
+
+
+    if (waluta === "PLN") {
+        document.getElementById('przeliczona1').value = wynik6;
+    }
+    if (waluta === "USD") {
+        document.getElementById('przeliczona2').value = wynik6;
+    }
+    if (waluta === "EUR") {
+        document.getElementById('przeliczona3').value = wynik6;
+    }
+    if (waluta === "GBP") {
+        document.getElementById('przeliczona4').value = wynik6;
+    }
+    if (waluta === "CNY") {
+        document.getElementById('przeliczona5').value = wynik6;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('przelicz2').onclick = przeliczanieWalutMulti;
+});
+
+
+//funkcja odpowiadajaca za przełączenie widoku
 
 function toggleView() {
     const view1 = document.querySelector(".container");
@@ -57,4 +100,12 @@ function toggleView() {
         view2.style.display = "none";
     }
 }
+
+
+
+
+
+
+
+
 
