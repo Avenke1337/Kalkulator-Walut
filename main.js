@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
 function przeliczanieWalutMulti(){
     let kwota = document.getElementById('kwotax').value;
     let waluta = document.getElementById('waluty3').value;
-    let wynik1 = kwota * kursy[waluta]["PLN"] + " PLN";
-    let wynik2 = kwota * kursy[waluta]["USD"] + " USD";
-    let wynik3 = kwota * kursy[waluta]["EUR"] + " EUR";
-    let wynik4 = kwota * kursy[waluta]["GBP"] + " GBP";
-    let wynik5 = kwota * kursy[waluta]["CNY"] + " CNY";
-    let wynik6 = kwota * kursy[waluta]["KRW"] + " KRW";
+    let wynik1 = (kwota * kursy[waluta]["PLN"]).toFixed(2) + " PLN";
+    let wynik2 = (kwota * kursy[waluta]["USD"]).toFixed(2) + " USD";
+    let wynik3 = (kwota * kursy[waluta]["EUR"]).toFixed(2) + " EUR";
+    let wynik4 = (kwota * kursy[waluta]["GBP"]).toFixed(2) + " GBP";
+    let wynik5 = (kwota * kursy[waluta]["CNY"]).toFixed(2) + " CNY";
+    let wynik6 = (kwota * kursy[waluta]["KRW"]).toFixed(2) + " KRW";
     document.getElementById('przeliczona1').value = wynik1
     document.getElementById('przeliczona2').value = wynik2
     document.getElementById('przeliczona3').value = wynik3
