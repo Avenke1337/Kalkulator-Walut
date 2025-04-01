@@ -40,10 +40,10 @@ function przeliczanieWalut(){
     let waluta1 = document.getElementById('waluty').value;
     let waluta2 = document.getElementById('waluty1').value;
     let wynik = kwota * kursy[waluta1][waluta2];
-    if(waluta1 != waluta2 && kwota >= 0  && kwota.value != null && kwota.value != 0){
-        document.getElementById('przeliczona').value = wynik.toFixed(2);
+    if(waluta1 == waluta2 || kwota == null || kwota <= 0){
+        alert("Bład");
     }else{
-        alert("Błąd!")
+        document.getElementById('przeliczona').value = wynik.toFixed(2);
         
     }
     
@@ -64,7 +64,7 @@ function przeliczanieWalutMulti(){
     let wynik4 = (kwota * kursy[waluta]["GBP"]).toFixed(2) + " GBP";
     let wynik5 = (kwota * kursy[waluta]["CNY"]).toFixed(2) + " CNY";
     let wynik6 = (kwota * kursy[waluta]["KRW"]).toFixed(2) + " KRW";
-    if(kwota >= 0 && kwota.value != null && kwota.value != 0){
+    if(kwota >= 0 && kwota != null && kwota != 0){
     document.getElementById('przeliczona1').value = wynik1
     document.getElementById('przeliczona2').value = wynik2
     document.getElementById('przeliczona3').value = wynik3
